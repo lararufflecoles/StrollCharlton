@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListViewActivity">
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_margin_bottom_padding"
+        android:layout_marginLeft="@dimen/button_margin_padding"
+        android:layout_marginRight="@dimen/button_margin_padding"
+        android:text="@string/app_name"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>
