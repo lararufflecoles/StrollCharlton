@@ -24,7 +24,7 @@ public class ListViewActivity extends AppCompatActivity implements RecyclerAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_list);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextAppearance(this, R.style.TitleTextAppearance);
         setSupportActionBar(toolbar);
 
@@ -63,7 +63,7 @@ public class ListViewActivity extends AppCompatActivity implements RecyclerAdapt
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();         // Inflate the menu; this adds items to the action bar if it is present.
-        inflater.inflate(R.menu.activity_list_view, menu);
+        inflater.inflate(R.menu.activity_list_view_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

@@ -15,20 +15,15 @@ public class MapViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_view);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_map);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextAppearance(this, R.style.TitleTextAppearance);
         setSupportActionBar(toolbar);
     }
 
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.activity_list_view, menu);
+        inflater.inflate(R.menu.activity_map_view_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
