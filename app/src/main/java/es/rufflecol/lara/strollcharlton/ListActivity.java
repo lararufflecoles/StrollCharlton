@@ -14,7 +14,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class ListViewActivity extends AppCompatActivity implements RecyclerAdapter.OnRecyclerItemClickListener {
+public class ListActivity extends AppCompatActivity implements RecyclerAdapter.OnRecyclerItemClickListener {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -22,10 +22,10 @@ public class ListViewActivity extends AppCompatActivity implements RecyclerAdapt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_view);
+        setContentView(R.layout.activity_list);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitleTextAppearance(this, R.style.TitleTextAppearance);
+        toolbar.setTitleTextAppearance(this, R.style.ToolbarTextAppearance);
         setSupportActionBar(toolbar);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -62,7 +62,7 @@ public class ListViewActivity extends AppCompatActivity implements RecyclerAdapt
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();         // Inflate the menu; this adds items to the action bar if it is present.
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.activity_list_view_toolbar, menu);
         return super.onCreateOptionsMenu(menu);
     }
@@ -76,15 +76,25 @@ public class ListViewActivity extends AppCompatActivity implements RecyclerAdapt
             case R.id.action_settings:
                 openSettings();
                 return true;
+            case R.id.action_about:
+                openAbout();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void openMap() {
-        Intent openMapView = new Intent(ListViewActivity.this, MapViewActivity.class);
+        Intent openMapView = new Intent(this, MapActivity.class);
         startActivity(openMapView);
     }
 
     private void openSettings() {
+        Intent openSettingsView = new Intent(this, SettingsActivity.class);
+        startActivity(openSettingsView);
+    }
+
+    private void openAbout() {
+        Intent openAboutView = new Intent(this, AboutActivity.class);
+        startActivity(openAboutView);
     }
 }

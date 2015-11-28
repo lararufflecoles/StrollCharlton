@@ -2,18 +2,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".ListFragment">
 
-    <TextView
-        android:id="@+id/splash_screen"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:minHeight="?attr/actionBarSize" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/misc_padding"
         android:gravity="center|center_vertical"
-        android:text="@string/app_name"
+        android:text="@string/about"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_header"
-        android:textStyle="bold"/>
+        android:textSize="@dimen/text_size_normal" />
 
 </LinearLayout>

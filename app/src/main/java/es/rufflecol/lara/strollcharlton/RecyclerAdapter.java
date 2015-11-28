@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    // This interface allows us to handle clicks outside of the adapter, i.e. the AlertDialog in the ListViewActivity
+    // This interface allows us to handle clicks outside of the adapter, i.e. the AlertDialog in the ListFragment
     // This adapter can now be used again to make another list that does something different when clicked e.g. a Toast
     public interface OnRecyclerItemClickListener {
 
@@ -29,7 +29,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_view, parent, false);
 
         ViewHolder viewHolder = new ViewHolder(view, onRecyclerItemClickListener);
         return viewHolder;

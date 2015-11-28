@@ -5,7 +5,6 @@
     <dimen name="button_margin_bottom_padding">5dp</dimen>
     <dimen name="misc_padding">15dp</dimen>
     <dimen name="text_size_header">18sp</dimen>
-    <!--<dimen name="text_size_sub_header">18sp</dimen>-->
     <dimen name="text_size_caption">16sp</dimen>
     <dimen name="text_size_normal">14sp</dimen>
 

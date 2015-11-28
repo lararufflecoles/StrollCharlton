@@ -3,14 +3,37 @@
 
     <!--Toolbar-->
     <item
+        android:id="@+id/action_map_view"
+        android:icon="@mipmap/ic_map_white_24dp"
+        android:title="@string/map_view"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_satellite_view"
+        android:icon="@mipmap/ic_satellite_white_24dp"
+        android:title="@string/list_view"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_terrain_view"
+        android:icon="@mipmap/ic_terrain_white_24dp"
+        android:title="@string/terrain_view"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_list_view"
         android:icon="@mipmap/ic_list_white_24dp"
-        android:title="@string/action_list_view"
-        app:showAsAction="ifRoom" />
+        android:title="@string/list_view"
+        app:showAsAction="always" />
 
     <!-- Settings, should always be in the overflow -->
     <item
         android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
         app:showAsAction="never" />
 </menu>

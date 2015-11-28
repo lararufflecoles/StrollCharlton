@@ -5,12 +5,17 @@
     <item
         android:id="@+id/action_map_view"
         android:icon="@mipmap/ic_map_white_24dp"
-        android:title="@string/action_map_view"
-        app:showAsAction="ifRoom" />
+        android:title="@string/map_view"
+        app:showAsAction="always" />
 
     <!-- Overflow-->
     <item
         android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
         app:showAsAction="never" />
 </menu>

@@ -17,18 +17,24 @@ public class MapFragment extends SupportMapFragment implements
 
     private boolean flag = true;
 
+    private final int[] MAP_TYPES = {
+            GoogleMap.MAP_TYPE_SATELLITE, GoogleMap.MAP_TYPE_NORMAL, GoogleMap.MAP_TYPE_TERRAIN};
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getMapAsync(this);
     }
 
-    private void initialiseMap() /** Method I created, not one called from any of the classes or interfaces added above **/
-    {
+    private void initialiseMap() { /** Method I created, not one called from any of the classes or interfaces added above **/
         getMap().setMyLocationEnabled(true);
         getMap().getUiSettings().setZoomControlsEnabled(true);
         getMap().setOnMyLocationChangeListener(this);
         getMap().setOnInfoWindowClickListener(this);
+    }
+
+    public void setMapType(int type) { /** Method I created, not one called from any of the classes or interfaces added above **/
+        getMap().setMapType(type);
     }
 
     @Override
