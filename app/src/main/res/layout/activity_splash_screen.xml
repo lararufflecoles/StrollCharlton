@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ListFragment">
+    tools:context="">
 
     <TextView
         android:id="@+id/splash_screen"

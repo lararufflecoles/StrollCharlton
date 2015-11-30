@@ -13,12 +13,11 @@
         android:minHeight="?attr/actionBarSize" />
 
     <TextView
-        android:id="@+id/about"
+        android:id="@+id/detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/misc_padding"
-        android:gravity="center|center_vertical"
-        android:text="@string/about"
+        android:gravity="left"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_normal" />
 

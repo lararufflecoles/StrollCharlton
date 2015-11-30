@@ -53,6 +53,15 @@
                 android:value=".SplashScreenActivity" />
         </activity>
 
+        <!--Detail Activity-->
+        <activity
+            android:name="es.rufflecol.lara.strollcharlton.DetailActivity">
+            android:parentActivityName=".SplashScreenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SplashScreenActivity" />
+        </activity>
+
         <!--Settings Activity-->
         <activity
             android:name="es.rufflecol.lara.strollcharlton.SettingsActivity"

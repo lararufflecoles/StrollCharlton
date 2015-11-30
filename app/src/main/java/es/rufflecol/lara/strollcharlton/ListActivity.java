@@ -12,7 +12,9 @@ import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.RecyclerView;
 
-import java.util.ArrayList;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.List;
 
 public class ListActivity extends AppCompatActivity implements RecyclerAdapter.OnRecyclerItemClickListener {
 
@@ -37,27 +39,16 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
         recyclerView.addItemDecoration(itemDecoration);
 
-        ArrayList<String> dataArray = new ArrayList<>();
-        for (int i = 1; i < 21; i++) {
-            dataArray.add("Detail " + i);
-        }
-        adapter = new RecyclerAdapter(dataArray, this);
+        List<DetailData> data = DetailData.fetchData();
+        adapter = new RecyclerAdapter(data, this);
         recyclerView.setAdapter(adapter);
     }
 
     @Override
-    public void onRecyclerItemClick(String data) {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("You tapped...");
-        alertDialogBuilder.setMessage(data);
-        alertDialogBuilder.setCancelable(true);
-        alertDialogBuilder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
+    public void onRecyclerItemClick(DetailData data) {
+        Intent detailActivity = new Intent(this, DetailActivity.class);
+        //detailActivity.putExtra(DetailActivity.EXTRA_DETAIL_DATA, data);
+        startActivity(detailActivity);
     }
 
     @Override

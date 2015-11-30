@@ -1,5 +1,6 @@
 package es.rufflecol.lara.strollcharlton;
 
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 
@@ -12,13 +13,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.List;
+
 public class MapFragment extends SupportMapFragment implements
         OnMapReadyCallback, GoogleMap.OnMyLocationChangeListener, GoogleMap.OnInfoWindowClickListener /* interfaces */ {
 
     private boolean flag = true;
-
-    private final int[] MAP_TYPES = {
-            GoogleMap.MAP_TYPE_SATELLITE, GoogleMap.MAP_TYPE_NORMAL, GoogleMap.MAP_TYPE_TERRAIN};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,10 +41,14 @@ public class MapFragment extends SupportMapFragment implements
     public void onMapReady(GoogleMap map) {
         initialiseMap();
 
-        map.addMarker(new MarkerOptions()
-                .position(new LatLng(21.276812, -157.826665))
-                .title("Moana Surfrider")
-                .snippet("Tremendous beach side hotel"));
+        List<DetailData> data = DetailData.fetchData();
+        for (DetailData item : data) {
+            MarkerOptions marker = new MarkerOptions()
+                    .position(new LatLng(item.getLatitude(), item.getLongitude()))
+                    .title(item.getTitle())
+                    .snippet(item.getSnippet());
+            map.addMarker(marker);
+        }
     }
 
     @Override
@@ -61,18 +65,7 @@ public class MapFragment extends SupportMapFragment implements
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-
-        // getActivity should be called whenever you need a context within a fragment
-
-//        switch (marker.getTitle()) {
-//            case "Charlton House":
-//                Intent intentCharltonHouse = new Intent(getActivity(), DetailActivity.class);
-//                intentCharltonHouse.putExtra("activityDetailTitle", R.string.charlton_house_detail_title);
-////                intentCharltonHouse.putExtra("activityDetailImage", R.drawable.charlton_house);
-//                intentCharltonHouse.putExtra("activityDetailUrl", R.string.charlton_house_url_link);
-//                intentCharltonHouse.putExtra("activityDetailText", R.string.charlton_house_detail_text);
-//                startActivity(intentCharltonHouse);
-//                break;
-//        }
+        Intent detailActivity = new Intent(getActivity(), DetailActivity.class);
+        startActivity(detailActivity);
     }
 }

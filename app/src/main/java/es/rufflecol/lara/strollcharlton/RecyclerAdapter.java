@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
@@ -14,13 +15,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     // This adapter can now be used again to make another list that does something different when clicked e.g. a Toast
     public interface OnRecyclerItemClickListener {
 
-        void onRecyclerItemClick(String data);
+        void onRecyclerItemClick(DetailData data);
     }
 
-    private ArrayList<String> dataSource;
+    private List<DetailData> dataSource;
     private OnRecyclerItemClickListener onRecyclerItemClickListener;
 
-    public RecyclerAdapter(ArrayList<String> dataArgs, OnRecyclerItemClickListener onRecyclerItemClickListener) {
+    public RecyclerAdapter(List<DetailData> dataArgs, OnRecyclerItemClickListener onRecyclerItemClickListener) {
         this.dataSource = dataArgs;
         this.onRecyclerItemClickListener = onRecyclerItemClickListener;
     }
@@ -49,7 +50,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView textView;
-        private String data;
+        private DetailData data;
         private OnRecyclerItemClickListener onRecyclerItemClickListener;
 
         public ViewHolder(View itemView, OnRecyclerItemClickListener onRecyclerItemClickListener) {
@@ -59,9 +60,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             itemView.setOnClickListener(this);
         }
 
-        public void setData(String data) {
+        public void setData(DetailData data) {
             this.data = data;
-            textView.setText(data);
+            textView.setText(data.getTitle());
         }
 
         @Override
