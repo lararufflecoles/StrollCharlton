@@ -34,7 +34,8 @@
         <!--List View Activity-->
         <activity
             android:name="es.rufflecol.lara.strollcharlton.ListActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
             android:parentActivityName=".SplashScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -44,7 +45,8 @@
         <!--Map View Activity-->
         <activity
             android:name="es.rufflecol.lara.strollcharlton.MapActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
             android:parentActivityName=".SplashScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
