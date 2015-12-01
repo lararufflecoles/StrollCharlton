@@ -65,7 +65,8 @@ public class MapFragment extends SupportMapFragment implements
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-        Intent detailActivity = new Intent(getActivity(), DetailActivity.class);
-        startActivity(detailActivity);
+//        Intent detailActivity = new Intent(getActivity(), DetailActivity.class);
+//        detailActivity.putExtra(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM, dataItem);
+//        startActivity(detailActivity);
     }
 }

@@ -55,14 +55,14 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void openShare() {
-//        Intent intent = getIntent();
-//
-//        sendIntent.setAction(Intent.ACTION_SEND);
-//        sendIntent.getParcelableExtra(Intent.EXTRA_SUBJECT, getString(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM));
-//        sendIntent.getParcelableExtra(Intent.EXTRA_TEXT, getString(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM));
-//        sendIntent.setType("text/plain");
-//
-//        startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.share)));
+        Intent shareDetailActivity = new Intent();
+
+        shareDetailActivity.setAction(Intent.ACTION_SEND);
+        shareDetailActivity.putExtra(Intent.EXTRA_SUBJECT, data.getTitle());
+        shareDetailActivity.putExtra(Intent.EXTRA_TEXT, data.getDetail());
+        shareDetailActivity.setType("text/plain");
+
+        startActivity(Intent.createChooser(shareDetailActivity, getResources().getText(R.string.share)));
     }
 
     private void openSettings() {

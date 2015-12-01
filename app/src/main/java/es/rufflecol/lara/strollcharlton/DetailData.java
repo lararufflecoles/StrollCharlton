@@ -14,7 +14,7 @@ public class DetailData implements Parcelable {
     private double latitude;
     private double longitude;
 
-    public DetailData() /* Default constructor, needs to be re-declared as the Parcelabler one overrides it */ {
+    public DetailData() /** Default constructor, needs to be re-declared as the Parcelabler one overrides it **/ {
     }
 
     public String getTitle() {
@@ -82,7 +82,7 @@ public class DetailData implements Parcelable {
     }
 
 
-    protected DetailData(Parcel in) /* Parcelabler created constructor */ {
+    protected DetailData(Parcel in) /** Parcelabler created constructor **/ {
         title = in.readString();
         snippet = in.readString();
         detail = in.readString();
