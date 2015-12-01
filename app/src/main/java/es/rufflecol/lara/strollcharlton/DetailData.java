@@ -1,15 +1,21 @@
 package es.rufflecol.lara.strollcharlton;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class DetailData {
+public class DetailData implements Parcelable {
 
     private String title;
     private String snippet;
     private String detail;
     private double latitude;
     private double longitude;
+
+    public DetailData() /* Default constructor, needs to be re-declared as the Parcelabler one overrides it */ {
+    }
 
     public String getTitle() {
         return title;
@@ -19,7 +25,6 @@ public class DetailData {
         this.title = title;
     }
 
-
     public String getSnippet() {
         return snippet;
     }
@@ -27,7 +32,6 @@ public class DetailData {
     public void setSnippet(String snippet) {
         this.snippet = snippet;
     }
-
 
     public String getDetail() {
         return detail;
@@ -37,7 +41,6 @@ public class DetailData {
         this.detail = detail;
     }
 
-
     public double getLatitude() {
         return latitude;
     }
@@ -45,7 +48,6 @@ public class DetailData {
     public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
-
 
     public double getLongitude() {
         return longitude;
@@ -78,4 +80,40 @@ public class DetailData {
 
         return data;
     }
+
+
+    protected DetailData(Parcel in) /* Parcelabler created constructor */ {
+        title = in.readString();
+        snippet = in.readString();
+        detail = in.readString();
+        latitude = in.readDouble();
+        longitude = in.readDouble();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(title);
+        dest.writeString(snippet);
+        dest.writeString(detail);
+        dest.writeDouble(latitude);
+        dest.writeDouble(longitude);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<DetailData> CREATOR = new Parcelable.Creator<DetailData>() {
+        @Override
+        public DetailData createFromParcel(Parcel in) {
+            return new DetailData(in);
+        }
+
+        @Override
+        public DetailData[] newArray(int size) {
+            return new DetailData[size];
+        }
+    };
 }

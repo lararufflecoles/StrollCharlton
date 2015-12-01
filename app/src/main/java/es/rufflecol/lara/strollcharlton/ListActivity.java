@@ -1,9 +1,7 @@
 package es.rufflecol.lara.strollcharlton;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.Menu;
@@ -11,8 +9,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.RecyclerView;
-
-import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.List;
 
@@ -39,15 +35,15 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
         recyclerView.addItemDecoration(itemDecoration);
 
-        List<DetailData> data = DetailData.fetchData();
-        adapter = new RecyclerAdapter(data, this);
+        List<DetailData> dataList = DetailData.fetchData();
+        adapter = new RecyclerAdapter(dataList, this);
         recyclerView.setAdapter(adapter);
     }
 
     @Override
-    public void onRecyclerItemClick(DetailData data) {
+    public void onRecyclerItemClick(DetailData dataItem) {
         Intent detailActivity = new Intent(this, DetailActivity.class);
-        //detailActivity.putExtra(DetailActivity.EXTRA_DETAIL_DATA, data);
+        detailActivity.putExtra(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM, dataItem);
         startActivity(detailActivity);
     }
 

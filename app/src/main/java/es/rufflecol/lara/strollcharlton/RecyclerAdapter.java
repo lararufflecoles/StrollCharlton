@@ -15,7 +15,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     // This adapter can now be used again to make another list that does something different when clicked e.g. a Toast
     public interface OnRecyclerItemClickListener {
 
-        void onRecyclerItemClick(DetailData data);
+        void onRecyclerItemClick(DetailData dataItem);
     }
 
     private List<DetailData> dataSource;
