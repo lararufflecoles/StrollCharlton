@@ -13,12 +13,15 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MapFragment extends SupportMapFragment implements
         OnMapReadyCallback, GoogleMap.OnMyLocationChangeListener, GoogleMap.OnInfoWindowClickListener /* interfaces */ {
 
     private boolean flag = true;
+    private Map<String, DetailData> markerIdToDetailDataMap = new HashMap<>(); // HashMap added so we can combine DetailData and Marker
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,11 +46,13 @@ public class MapFragment extends SupportMapFragment implements
 
         List<DetailData> data = DetailData.fetchData();
         for (DetailData item : data) {
-            MarkerOptions marker = new MarkerOptions()
+            MarkerOptions markerOptions = new MarkerOptions()
                     .position(new LatLng(item.getLatitude(), item.getLongitude()))
                     .title(item.getTitle())
                     .snippet(item.getSnippet());
-            map.addMarker(marker);
+            Marker marker = map.addMarker(markerOptions); // 'Marker marker =' now assigns 'map.addMarker(markerOptions)' to itself - a local variable
+            String markerId = marker.getId(); // We can now reference marker and get its ID... and assign that to markedId
+            markerIdToDetailDataMap.put(markerId, item); // Therefore, markerId and item can now be put into the HashMap markerIdToDetailDataMap
         }
     }
 
@@ -65,8 +70,10 @@ public class MapFragment extends SupportMapFragment implements
 
     @Override
     public void onInfoWindowClick(Marker marker) {
-//        Intent detailActivity = new Intent(getActivity(), DetailActivity.class);
-//        detailActivity.putExtra(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM, dataItem);
-//        startActivity(detailActivity);
+        Intent detailActivity = new Intent(getActivity(), DetailActivity.class);
+        String markerId = marker.getId(); // Getting the id of the marker clicked
+        DetailData item = markerIdToDetailDataMap.get(markerId); // Getting the DetailData item from the HashMap using the marker id as the key
+        detailActivity.putExtra(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM, item); //
+        startActivity(detailActivity);
     }
 }
