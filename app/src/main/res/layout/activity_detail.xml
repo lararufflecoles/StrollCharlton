@@ -41,7 +41,7 @@
                 android:paddingBottom="@dimen/fifteen_padding"
                 android:paddingLeft="@dimen/fifteen_padding"
                 android:paddingRight="@dimen/fifteen_padding"
-                android:paddingTop="@dimen/thirteen_padding"
+                android:paddingTop="@dimen/fourteen_padding"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size_normal" />
 

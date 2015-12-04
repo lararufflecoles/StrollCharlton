@@ -77,7 +77,7 @@ public class DetailData implements Parcelable {
         charltonHouse.setDetail("Jacobean building in the south-east London suburb of Charlton." +
                 "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
                 "\n\nPresumed to have been designed by John Thorpe." +
-                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
                 "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
                 "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
                 "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
@@ -92,15 +92,29 @@ public class DetailData implements Parcelable {
         charltonAthletic.setDetail("Jacobean building in the south-east London suburb of Charlton." +
                 "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
                 "\n\nPresumed to have been designed by John Thorpe." +
-                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
                 "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
                 "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
                 "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        charltonHouse.setImage("http://www.freetoursoflondon.com/wp-content/uploads/2015/10/shutterstock_48016777.jpg");
         charltonAthletic.setImage("https://pbs.twimg.com/profile_images/341069384/wallpaper4-1024.jpg");
         charltonAthletic.setLatitude(51.486526);
         charltonAthletic.setLongitude(0.036524);
         data.add(charltonAthletic);
+
+        DetailData whiteSwan = new DetailData();
+        whiteSwan.setTitle("The White Swan");
+        whiteSwan.setSnippet("Cosy pub on the main road through Charlton");
+        whiteSwan.setDetail("Jacobean building in the south-east London suburb of Charlton." +
+                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
+                "\n\nPresumed to have been designed by John Thorpe." +
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
+                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        whiteSwan.setImage("http://pubshistory.com/KentPubs/Charlton/WhiteHart.jpg");
+        whiteSwan.setLatitude(51.481830);
+        whiteSwan.setLongitude(0.037523);
+        data.add(whiteSwan);
 
         return data;
     }
