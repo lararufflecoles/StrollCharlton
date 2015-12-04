@@ -7,7 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -25,10 +28,17 @@ public class DetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
+
         data = intent.getParcelableExtra(PUT_EXTRA_DETAIL_DATA_ITEM);
         setTitle(data.getTitle());
-        TextView textView = (TextView) findViewById(R.id.detail);
+
+        TextView textView = (TextView) findViewById(R.id.detail_text);
         textView.setText(data.getDetail());
+
+        ImageView imageView = (ImageView) findViewById(R.id.detail_image);
+        Picasso.with(this)
+                .load(data.getImage())
+                .into(imageView);
     }
 
     @Override

@@ -16,7 +16,7 @@
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/misc_padding"
+        android:padding="@dimen/fifteen_padding"
         android:gravity="center|center_vertical"
         android:text="@string/about"
         android:textColor="@color/white"

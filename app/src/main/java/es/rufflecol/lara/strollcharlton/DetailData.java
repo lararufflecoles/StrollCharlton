@@ -11,6 +11,7 @@ public class DetailData implements Parcelable {
     private String title;
     private String snippet;
     private String detail;
+    private String image;
     private double latitude;
     private double longitude;
 
@@ -41,6 +42,14 @@ public class DetailData implements Parcelable {
         this.detail = detail;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public double getLatitude() {
         return latitude;
     }
@@ -63,19 +72,34 @@ public class DetailData implements Parcelable {
         List<DetailData> data = new ArrayList<>();
 
         DetailData charltonHouse = new DetailData();
-        charltonHouse.setLatitude(51.480752);
-        charltonHouse.setLongitude(0.037084);
         charltonHouse.setTitle("Charlton House");
         charltonHouse.setSnippet("Jacobean building built in 1612");
-        charltonHouse.setDetail("blah blah blah");
+        charltonHouse.setDetail("Jacobean building in the south-east London suburb of Charlton." +
+                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
+                "\n\nPresumed to have been designed by John Thorpe." +
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        charltonHouse.setImage("http://www.freetoursoflondon.com/wp-content/uploads/2015/10/shutterstock_48016777.jpg");
+        charltonHouse.setLatitude(51.480752);
+        charltonHouse.setLongitude(0.037084);
         data.add(charltonHouse);
 
         DetailData charltonAthletic = new DetailData();
-        charltonAthletic.setLatitude(51.486526);
-        charltonAthletic.setLongitude(0.036524);
         charltonAthletic.setTitle("Charlton Athletic FC");
         charltonAthletic.setSnippet("Championship team who play at The Valley");
-        charltonAthletic.setDetail("blah blah blah");
+        charltonAthletic.setDetail("Jacobean building in the south-east London suburb of Charlton." +
+                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
+                "\n\nPresumed to have been designed by John Thorpe." +
+                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
+                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        charltonHouse.setImage("http://www.freetoursoflondon.com/wp-content/uploads/2015/10/shutterstock_48016777.jpg");
+        charltonAthletic.setImage("https://pbs.twimg.com/profile_images/341069384/wallpaper4-1024.jpg");
+        charltonAthletic.setLatitude(51.486526);
+        charltonAthletic.setLongitude(0.036524);
         data.add(charltonAthletic);
 
         return data;
@@ -86,6 +110,7 @@ public class DetailData implements Parcelable {
         title = in.readString();
         snippet = in.readString();
         detail = in.readString();
+        image = in.readString();
         latitude = in.readDouble();
         longitude = in.readDouble();
     }
@@ -100,6 +125,7 @@ public class DetailData implements Parcelable {
         dest.writeString(title);
         dest.writeString(snippet);
         dest.writeString(detail);
+        dest.writeString(image);
         dest.writeDouble(latitude);
         dest.writeDouble(longitude);
     }
