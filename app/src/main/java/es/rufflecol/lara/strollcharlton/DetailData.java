@@ -6,13 +6,26 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.gson.annotations.SerializedName;
+
 public class DetailData implements Parcelable {
 
+    @SerializedName("title")
     private String title;
+
+    @SerializedName("snippet")
     private String snippet;
+
+    @SerializedName("detail")
     private String detail;
+
+    @SerializedName("image")
     private String image;
+
+    @SerializedName("latitude")
     private double latitude;
+
+    @SerializedName("longitude")
     private double longitude;
 
     public DetailData() /** Default constructor, needs to be re-declared as the Parcelabler one overrides it **/ {
@@ -113,12 +126,11 @@ public class DetailData implements Parcelable {
                 "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
         whiteSwan.setImage("http://pubshistory.com/KentPubs/Charlton/WhiteHart.jpg");
         whiteSwan.setLatitude(51.481830);
-        whiteSwan.setLongitude(0.037523);
+            whiteSwan.setLongitude(0.037523);
         data.add(whiteSwan);
 
         return data;
     }
-
 
     protected DetailData(Parcel in) /** Parcelabler created constructor **/ {
         title = in.readString();
