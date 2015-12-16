@@ -20,6 +20,6 @@
         android:gravity="center|center_vertical"
         android:text="@string/about"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_normal" />
+        android:textSize="@dimen/fourteen_padding" />
 
 </LinearLayout>

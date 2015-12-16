@@ -13,7 +13,7 @@
         android:gravity="center|center_vertical"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_header"
+        android:textSize="@dimen/eighteen_padding"
         android:textStyle="bold"/>
 
 </LinearLayout>

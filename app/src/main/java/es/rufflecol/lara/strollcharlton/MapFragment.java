@@ -3,6 +3,7 @@ package es.rufflecol.lara.strollcharlton;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,7 +13,13 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.Gson;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +34,40 @@ public class MapFragment extends SupportMapFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getMapAsync(this);
+    }
+
+    private List<DetailData> readDataFromFileAndParse() {
+        String text = readJsonFromFile();
+        Gson gson = new Gson();
+        DetailDataModel parsedData = gson.fromJson(text, DetailDataModel.class);
+        List<DetailData> dataList = parsedData.getPlaces();
+        return dataList;
+    }
+
+    private String readJsonFromFile() {
+        String returnValue = "";
+
+        try {
+            InputStream inputStream = getActivity().openFileInput("places.json");
+
+            if (inputStream != null) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString;
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ((receiveString = bufferedReader.readLine()) != null) {
+                    stringBuilder.append(receiveString);
+                }
+                inputStream.close();
+                returnValue = stringBuilder.toString();
+            }
+        } catch (FileNotFoundException exception) {
+            Log.e("Login activity", "File not found: " + exception.toString());
+        } catch (IOException exception) {
+            Log.e("Login activity", "Cannot read file: " + exception.toString());
+        }
+        return returnValue;
     }
 
     private void initialiseMap() { /** Method I created, not one called from any of the classes or interfaces added above **/
@@ -44,8 +85,8 @@ public class MapFragment extends SupportMapFragment implements
     public void onMapReady(GoogleMap map) {
         initialiseMap();
 
-        List<DetailData> data = DetailData.fetchData();
-        for (DetailData item : data) {
+        List<DetailData> dataList = readDataFromFileAndParse();
+        for (DetailData item : dataList) {
             MarkerOptions markerOptions = new MarkerOptions()
                     .position(new LatLng(item.getLatitude(), item.getLongitude()))
                     .title(item.getTitle())

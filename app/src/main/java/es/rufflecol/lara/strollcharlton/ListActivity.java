@@ -4,12 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.RecyclerView;
 
+import com.google.gson.Gson;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 
 public class ListActivity extends AppCompatActivity implements RecyclerAdapter.OnRecyclerItemClickListener {
@@ -35,7 +43,7 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
         recyclerView.addItemDecoration(itemDecoration);
 
-        List<DetailData> dataList = DetailData.fetchData();
+        List<DetailData> dataList = readDataFromFileAndParse();
         adapter = new RecyclerAdapter(dataList, this);
         recyclerView.setAdapter(adapter);
     }
@@ -45,6 +53,40 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
         Intent detailActivity = new Intent(this, DetailActivity.class);
         detailActivity.putExtra(DetailActivity.PUT_EXTRA_DETAIL_DATA_ITEM, dataItem);
         startActivity(detailActivity);
+    }
+
+    private List<DetailData> readDataFromFileAndParse() {
+        String text = readJsonFromFile();
+        Gson gson = new Gson();
+        DetailDataModel parsedData = gson.fromJson(text, DetailDataModel.class);
+        List<DetailData> dataList = parsedData.getPlaces();
+        return dataList;
+    }
+
+    private String readJsonFromFile() {
+        String returnValue = "";
+
+        try {
+            InputStream inputStream = openFileInput("places.json");
+
+            if (inputStream != null) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString;
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ((receiveString = bufferedReader.readLine()) != null) {
+                    stringBuilder.append(receiveString);
+                }
+                inputStream.close();
+                returnValue = stringBuilder.toString();
+            }
+        } catch (FileNotFoundException exception) {
+            Log.e("Login activity", "File not found: " + exception.toString());
+        } catch (IOException exception) {
+            Log.e("Login activity", "Cannot read file: " + exception.toString());
+        }
+        return returnValue;
     }
 
     @Override

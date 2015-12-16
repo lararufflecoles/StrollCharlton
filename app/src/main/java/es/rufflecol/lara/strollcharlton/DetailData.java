@@ -80,58 +80,7 @@ public class DetailData implements Parcelable {
     }
 
 
-    public static List<DetailData> fetchData() {
-
-        List<DetailData> data = new ArrayList<>();
-
-        DetailData charltonHouse = new DetailData();
-        charltonHouse.setTitle("Charlton House");
-        charltonHouse.setSnippet("Jacobean building built in 1612");
-        charltonHouse.setDetail("Jacobean building in the south-east London suburb of Charlton." +
-                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
-                "\n\nPresumed to have been designed by John Thorpe." +
-                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        charltonHouse.setImage("http://www.freetoursoflondon.com/wp-content/uploads/2015/10/shutterstock_48016777.jpg");
-        charltonHouse.setLatitude(51.480752);
-        charltonHouse.setLongitude(0.037084);
-        data.add(charltonHouse);
-
-        DetailData charltonAthletic = new DetailData();
-        charltonAthletic.setTitle("Charlton Athletic FC");
-        charltonAthletic.setSnippet("Championship team who play at The Valley");
-        charltonAthletic.setDetail("Jacobean building in the south-east London suburb of Charlton." +
-                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
-                "\n\nPresumed to have been designed by John Thorpe." +
-                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        charltonAthletic.setImage("https://pbs.twimg.com/profile_images/341069384/wallpaper4-1024.jpg");
-        charltonAthletic.setLatitude(51.486526);
-        charltonAthletic.setLongitude(0.036524);
-        data.add(charltonAthletic);
-
-        DetailData whiteSwan = new DetailData();
-        whiteSwan.setTitle("The White Swan");
-        whiteSwan.setSnippet("Cosy pub on the main road through Charlton");
-        whiteSwan.setDetail("Jacobean building in the south-east London suburb of Charlton." +
-                "\n\nBuilt in 1612 during the reign of James I for his son Prince Henry's tutor Sir Adam Newton." +
-                "\n\nPresumed to have been designed by John Thorpe." +
-                "\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " +
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-        whiteSwan.setImage("http://pubshistory.com/KentPubs/Charlton/WhiteHart.jpg");
-        whiteSwan.setLatitude(51.481830);
-            whiteSwan.setLongitude(0.037523);
-        data.add(whiteSwan);
-
-        return data;
-    }
-
+    /** Parcelable to send DetailData to DetailActivity **/
     protected DetailData(Parcel in) /** Parcelabler created constructor **/ {
         title = in.readString();
         snippet = in.readString();
@@ -156,7 +105,6 @@ public class DetailData implements Parcelable {
         dest.writeDouble(longitude);
     }
 
-    @SuppressWarnings("unused")
     public static final Parcelable.Creator<DetailData> CREATOR = new Parcelable.Creator<DetailData>() {
         @Override
         public DetailData createFromParcel(Parcel in) {

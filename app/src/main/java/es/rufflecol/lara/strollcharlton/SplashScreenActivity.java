@@ -24,8 +24,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class SplashScreenActivity extends AppCompatActivity {
-
-    private TextView textView;
+    
     private String text;
 
     @Override

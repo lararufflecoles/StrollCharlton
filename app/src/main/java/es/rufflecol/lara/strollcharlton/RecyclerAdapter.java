@@ -11,8 +11,8 @@ import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    // This interface allows us to handle clicks outside of the adapter, i.e. the AlertDialog in the ListFragment
-    // This adapter can now be used again to make another list that does something different when clicked e.g. a Toast
+    /** This interface allows us to handle clicks outside of the adapter, i.e. the AlertDialog in the ListFragment **/
+    /** This adapter can now be used again to make another list that does something different when clicked e.g. a Toast **/
     public interface OnRecyclerItemClickListener {
 
         void onRecyclerItemClick(DetailData dataItem);
@@ -26,7 +26,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         this.onRecyclerItemClickListener = onRecyclerItemClickListener;
     }
 
-    // Next three methods are the abstract methods from the parent class - RecyclerView.Adapter<RecyclerAdapter.ViewHolder>
+    /** Next three methods are the abstract methods from the parent class - RecyclerView.Adapter<RecyclerAdapter.ViewHolder> **/
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
@@ -46,7 +46,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return dataSource.size();
     }
 
-    // The nested ViewHolder class is inherently tightly coupled to the RecyclerAdapter - part of its nature (the opposite of Separation of Concerns)
+    /** The nested ViewHolder class is inherently tightly coupled to the RecyclerAdapter - part of its nature (the opposite of Separation of Concerns) **/
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView textView;
