@@ -80,6 +80,7 @@ public class DetailData implements Parcelable {
     }
 
 
+
     /** Parcelable to send DetailData to DetailActivity **/
     protected DetailData(Parcel in) /** Parcelabler created constructor **/ {
         title = in.readString();

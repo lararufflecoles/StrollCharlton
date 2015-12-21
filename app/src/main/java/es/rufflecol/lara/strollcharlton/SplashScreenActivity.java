@@ -6,13 +6,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,19 +22,30 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    
+
     private String text;
+    private boolean timerCompleted = false;
+    private boolean jsonDownloaded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+        TextView textView = (TextView) findViewById(R.id.splash_screen);
+        textView.setText(R.string.app_name);
+
         DownloadJsonTask downloadJsonTask = new DownloadJsonTask();
         downloadJsonTask.execute();
 
-        TextView textView = (TextView) findViewById(R.id.splash_screen);
-        textView.setText(R.string.app_name);
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                timerCompleted = true;
+                startListActivityIfJsonDownloadedAndTimerCompleted();
+            }
+        }, 1000);
     }
 
     private class DownloadJsonTask extends AsyncTask<String, Void, Boolean> {
@@ -50,11 +59,11 @@ public class SplashScreenActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            writeToFile(text);
+            writeStreamToFile(text);
 
             File directory = getFilesDir();
             File file = new File(directory, "places.json");
-            if(file.exists()) {
+            if (file.exists()) {
                 return true;
             } else {
                 return false;
@@ -64,12 +73,19 @@ public class SplashScreenActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Boolean wasSuccessful) {
             if (wasSuccessful) {
-                Intent listActivity = new Intent(SplashScreenActivity.this, ListActivity.class);
-                startActivity(listActivity);
-                finish();
+                jsonDownloaded = true;
+                startListActivityIfJsonDownloadedAndTimerCompleted();
             } else {
                 Toast.makeText(SplashScreenActivity.this, "Error reading file", Toast.LENGTH_LONG).show();
             }
+        }
+    }
+
+    private void startListActivityIfJsonDownloadedAndTimerCompleted() {
+        if (jsonDownloaded && timerCompleted) {
+            Intent listActivity = new Intent(SplashScreenActivity.this, ListActivity.class);
+            startActivity(listActivity);
+            finish();
         }
     }
 
@@ -84,7 +100,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         return total.toString();
     }
 
-    private void writeToFile(String data) {
+    private void writeStreamToFile(String data) {
         try {
             FileOutputStream fileOutputStream = openFileOutput("places.json", Context.MODE_PRIVATE);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
