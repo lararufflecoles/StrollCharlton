@@ -53,7 +53,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(String... urls) {
             try {
-                URL url = new URL("http://lara.rufflecol.es/places.json");
+                URL url = new URL("http://lara.rufflecol.es/strollcharlton/places.json");
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 text = readStream(urlConnection.getInputStream());
             } catch (Exception e) {

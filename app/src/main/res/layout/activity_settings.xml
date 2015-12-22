@@ -20,6 +20,6 @@
         android:padding="@dimen/fifteen_padding"
         android:text="@string/settings"
         android:textColor="@color/white"
-        android:textSize="@dimen/fourteen_padding" />
+        android:textSize="@dimen/fourteen_size" />
 
 </LinearLayout>

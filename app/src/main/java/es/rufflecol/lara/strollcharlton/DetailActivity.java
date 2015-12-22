@@ -1,12 +1,14 @@
 package es.rufflecol.lara.strollcharlton;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,17 +30,28 @@ public class DetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-
         data = intent.getParcelableExtra(PUT_EXTRA_DETAIL_DATA_ITEM);
         setTitle(data.getTitle());
-
-        TextView textView = (TextView) findViewById(R.id.detail_text);
-        textView.setText(data.getDetail());
 
         ImageView imageView = (ImageView) findViewById(R.id.detail_image);
         Picasso.with(this)
                 .load(data.getImage())
                 .into(imageView);
+
+        TextView detailTextView = (TextView) findViewById(R.id.detail_text);
+        detailTextView.setText(data.getDetail());
+
+        TextView websiteTextView = (TextView) findViewById(R.id.website_link);
+        websiteTextView.setText(data.getWebsiteVanity());
+        websiteTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+                browserIntent.setData(Uri.parse(data.getWebsite()));
+                startActivity(browserIntent);
+            }
+        });
+
     }
 
     @Override

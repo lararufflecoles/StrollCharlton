@@ -43,7 +43,18 @@
                 android:paddingRight="@dimen/fifteen_padding"
                 android:paddingTop="@dimen/fourteen_padding"
                 android:textColor="@color/white"
-                android:textSize="@dimen/fourteen_padding" />
+                android:textSize="@dimen/fourteen_size" />
+
+            <TextView
+                android:id="@+id/website_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="@dimen/fifteen_padding"
+                android:paddingLeft="@dimen/fifteen_padding"
+                android:paddingRight="@dimen/fifteen_padding"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_size" />
 
         </LinearLayout>
 

@@ -16,11 +16,17 @@ public class DetailData implements Parcelable {
     @SerializedName("snippet")
     private String snippet;
 
+    @SerializedName("image")
+    private String image;
+
     @SerializedName("detail")
     private String detail;
 
-    @SerializedName("image")
-    private String image;
+    @SerializedName("website")
+    private String website;
+
+    @SerializedName("website_vanity")
+    private String websiteVanity;
 
     @SerializedName("latitude")
     private double latitude;
@@ -47,6 +53,14 @@ public class DetailData implements Parcelable {
         this.snippet = snippet;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public String getDetail() {
         return detail;
     }
@@ -55,12 +69,20 @@ public class DetailData implements Parcelable {
         this.detail = detail;
     }
 
-    public String getImage() {
-        return image;
+    public String getWebsite() {
+        return website;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getWebsiteVanity() {
+        return websiteVanity;
+    }
+
+    public void setWebsiteVanity(String websiteVanity) {
+        this.websiteVanity = websiteVanity;
     }
 
     public double getLatitude() {
@@ -85,8 +107,10 @@ public class DetailData implements Parcelable {
     protected DetailData(Parcel in) /** Parcelabler created constructor **/ {
         title = in.readString();
         snippet = in.readString();
-        detail = in.readString();
         image = in.readString();
+        detail = in.readString();
+        website = in.readString();
+        websiteVanity = in.readString();
         latitude = in.readDouble();
         longitude = in.readDouble();
     }
@@ -100,8 +124,10 @@ public class DetailData implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(title);
         dest.writeString(snippet);
-        dest.writeString(detail);
         dest.writeString(image);
+        dest.writeString(detail);
+        dest.writeString(website);
+        dest.writeString(websiteVanity);
         dest.writeDouble(latitude);
         dest.writeDouble(longitude);
     }

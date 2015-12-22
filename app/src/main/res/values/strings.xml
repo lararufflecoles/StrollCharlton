@@ -18,4 +18,7 @@
     <!--About-->
     <string name="about_detail">This app was designed and coded by Lara Ruffle Coles</string>
 
+    <!--Detail Activity-->
+    <string name="website">Website</string>
+
 </resources>

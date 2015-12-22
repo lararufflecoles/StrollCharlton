@@ -12,4 +12,9 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!--Website Text-->
+    <!--<style name="WebsiteTextAppearance" parent="@android:style/TextAppearance.Medium">-->
+        <!--<item name="android:textStyle">italic</item>-->
+    <!--</style>-->
+
 </resources>
