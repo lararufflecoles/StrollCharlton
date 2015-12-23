@@ -14,12 +14,10 @@
 
     <TextView
         android:id="@+id/about"
+        style="@style/SettingsAndAboutActivitiesTextStyling"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/fifteen_padding"
         android:gravity="center|center_vertical"
-        android:text="@string/about"
-        android:textColor="@color/white"
-        android:textSize="@dimen/fourteen_size" />
+        android:text="@string/about" />
 
 </LinearLayout>

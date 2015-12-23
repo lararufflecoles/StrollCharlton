@@ -4,6 +4,7 @@
     <string name="google_api_key">AIzaSyBgi62YNvrWgj728-nqnVmMrbs7BYX5YGY</string>
 
     <!--Toolbar-->
+    <string name="up">Up</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
     <string name="share">Share</string>
@@ -13,10 +14,10 @@
     <string name="terrain_view">Terrain View</string>
 
     <!--Settings-->
-    <string name="settings_detail">Settings detail</string>
+    <string name="settings_detail">Settings detail (nothing exciting here, sorry)</string>
 
     <!--About-->
-    <string name="about_detail">This app was designed and coded by Lara Ruffle Coles</string>
+    <string name="about_detail">This app was designed and coded by <a href="http://lara.rufflecol.es">Lara Ruffle Coles</a></string>
 
     <!--Detail Activity-->
     <string name="website">Website</string>
