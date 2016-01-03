@@ -35,14 +35,22 @@
 
             <TextView
                 android:id="@+id/detail_text"
-                style="@style/DetailActivityTextStyling"
+                style="@style/GenericTextStyling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left" />
 
             <TextView
+                android:id="@+id/divider"
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="- - -"/>
+
+            <TextView
                 android:id="@+id/website_link"
-                style="@style/DetailActivityTextStyling"
+                style="@style/GenericTextStyling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left" />

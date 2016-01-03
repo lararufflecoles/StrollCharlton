@@ -47,7 +47,7 @@ public class MapFragment extends SupportMapFragment implements
     }
     
     private void setLocationToCharlton(GoogleMap map) {
-        LatLng charlton = new LatLng(51.481414, 0.035837);
+        LatLng charlton = new LatLng(51.484835, 0.038323);
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(charlton, 14f);
         map.animateCamera(cameraUpdate);
     }

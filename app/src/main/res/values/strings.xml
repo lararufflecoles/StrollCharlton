@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">strollCharlton</string>
-    <string name="google_api_key">AIzaSyBgi62YNvrWgj728-nqnVmMrbs7BYX5YGY</string>
+    <string name="google_maps_api_key">AIzaSyAkjTNPQX0A3p5wQJEjOTwaZmw-6O3HUMY</string>
 
     <!--Toolbar-->
     <string name="up">Up</string>
@@ -14,10 +14,14 @@
     <string name="terrain_view">Terrain View</string>
 
     <!--Settings-->
-    <string name="settings_detail">Settings detail (nothing exciting here, sorry)</string>
+    <string name="settings_detail">Nothing exciting here</string>
 
     <!--About-->
-    <string name="about_detail">This app was designed and coded by <a href="http://lara.rufflecol.es">Lara Ruffle Coles</a></string>
+    <string name="about_detail">App designed and coded by Lara Ruffle Coles
+        \n\n<a href="mailto:lararuffle@lararuffle.co.uk?subject=strollCharlton">Email</a>
+        \t<a href="http://lara.rufflecol.es">Website</a>
+        \t\t<a href="https://github.com/lararufflecoles">GitHub</a>
+        \t\t<a href="http://uk.linkedin.com/in/lararufflecoles">LinkedIn</a></string>
 
     <!--Detail Activity-->
     <string name="website">Website</string>

@@ -7,31 +7,38 @@
         <item name="android:textColorSecondary">@color/white</item>
     </style>
 
+    <!--Divider-->
+    <style name="Divider" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/fifteen_size</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
     <!--Toolbar Text-->
     <style name="ToolbarTextAppearance" parent="@android:style/TextAppearance.Medium">
         <item name="android:textStyle">bold</item>
     </style>
 
     <!--Splash Screen Activity Text-->
-    <style name="SplashScreenActivityTextStyling" parent="@android:style/TextAppearance.Medium">
+    <style name="SplashScreenTextStyling" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/eighteen_padding</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">15dp</item>
     </style>
 
-    <!--Detail Activity Text-->
-    <style name="DetailActivityTextStyling" parent="@android:style/TextAppearance.Medium">
+    <!--ListView Text-->
+    <style name="ListViewTextStyling" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/fourteen_size</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:textSize">@dimen/fifteen_size</item>
     </style>
 
-    <!--Settings and About Activities Text-->
-    <style name="SettingsAndAboutActivitiesTextStyling" parent="@android:style/TextAppearance.Medium">
+
+    <!--Detail, Settings, About and Activity Text-->
+    <style name="GenericTextStyling" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/fourteen_size</item>
-        <item name="android:padding">20dp</item>
+        <item name="android:textSize">@dimen/fifteen_size</item>
+        <item name="android:padding">15dp</item>
     </style>
 
 </resources>
