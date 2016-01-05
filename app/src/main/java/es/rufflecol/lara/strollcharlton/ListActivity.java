@@ -105,6 +105,9 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
             case R.id.action_settings:
                 openSettings();
                 return true;
+            case R.id.action_useful_links:
+                openUsefulLinks();
+                return true;
             case R.id.action_about:
                 openAbout();
                 return true;
@@ -120,6 +123,11 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
     private void openSettings() {
         Intent openSettingsView = new Intent(this, SettingsActivity.class);
         startActivity(openSettingsView);
+    }
+
+    private void openUsefulLinks() {
+        Intent openUsefulLinksView = new Intent(ListActivity.this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinksView);
     }
 
     private void openAbout() {

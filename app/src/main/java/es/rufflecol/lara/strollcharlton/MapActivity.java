@@ -48,6 +48,9 @@ public class MapActivity extends AppCompatActivity {
             case R.id.action_settings:
                 openSettings();
                 return true;
+            case R.id.action_useful_links:
+                openUsefulLinks();
+                return true;
             case R.id.action_about:
                 openAbout();
                 return true;
@@ -81,6 +84,11 @@ public class MapActivity extends AppCompatActivity {
     private void openSettings() {
         Intent openSettingsView = new Intent(MapActivity.this, SettingsActivity.class);
         startActivity(openSettingsView);
+    }
+
+    private void openUsefulLinks() {
+        Intent openUsefulLinksView = new Intent(MapActivity.this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinksView);
     }
 
     private void openAbout() {

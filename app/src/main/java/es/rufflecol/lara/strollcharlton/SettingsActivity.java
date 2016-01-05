@@ -14,13 +14,13 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        TextView textView = (TextView) findViewById(R.id.settings);
-        textView.setText(R.string.settings_detail);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextAppearance(this, R.style.ToolbarTextAppearance);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        TextView textView = (TextView) findViewById(R.id.settings);
+        textView.setText(R.string.settings_detail);
     }
 
     @Override

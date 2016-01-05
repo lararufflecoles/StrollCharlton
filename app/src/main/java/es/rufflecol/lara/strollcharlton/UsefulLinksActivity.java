@@ -8,21 +8,21 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.TextView;
 
-public class AboutActivity extends AppCompatActivity {
+public class UsefulLinksActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_useful_links);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextAppearance(this, R.style.ToolbarTextAppearance);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView textView = (TextView) findViewById(R.id.about);
-        textView.setText(R.string.about_detail);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView textView = (TextView) findViewById(R.id.useful_links);
+        textView.setText(R.string.useful_links_detail);
+
     }
 
     @Override

@@ -52,7 +52,6 @@ public class DetailActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
-
     }
 
     @Override
@@ -70,6 +69,9 @@ public class DetailActivity extends AppCompatActivity {
                 return true;
             case R.id.action_settings:
                 openSettings();
+                return true;
+            case R.id.action_useful_links:
+                openUsefulLinks();
                 return true;
             case R.id.action_about:
                 openAbout();
@@ -92,6 +94,11 @@ public class DetailActivity extends AppCompatActivity {
     private void openSettings() {
         Intent openSettingsView = new Intent(this, SettingsActivity.class);
         startActivity(openSettingsView);
+    }
+
+    private void openUsefulLinks() {
+        Intent openUsefulLinksView = new Intent(DetailActivity.this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinksView);
     }
 
     private void openAbout() {

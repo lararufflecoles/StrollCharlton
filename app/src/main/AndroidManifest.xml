@@ -72,6 +72,16 @@
                 android:value=".SplashScreenActivity" />
         </activity>
 
+        <!--Useful Links Activity-->
+        <activity
+            android:name="es.rufflecol.lara.strollcharlton.UsefulLinksActivity"
+            android:label="@string/useful_links">
+            android:parentActivityName=".SplashScreenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SplashScreenActivity" />
+        </activity>
+
         <!--About Activity-->
         <activity
             android:name="es.rufflecol.lara.strollcharlton.AboutActivity"

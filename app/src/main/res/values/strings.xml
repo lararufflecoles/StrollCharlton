@@ -6,6 +6,7 @@
     <!--Toolbar-->
     <string name="up">Up</string>
     <string name="settings">Settings</string>
+    <string name="useful_links">Useful Links</string>
     <string name="about">About</string>
     <string name="share">Share</string>
     <string name="list_view">List View</string>
@@ -16,14 +17,17 @@
     <!--Settings-->
     <string name="settings_detail">Nothing exciting here</string>
 
+    <!--Useful Links-->
+    <string name="useful_links_detail">Blah blah blah</string>
+
     <!--About-->
-    <string name="about_detail">App designed and coded by Lara Ruffle Coles
+    <string name="about_detail">App designed, written, coded by Lara Ruffle Coles
         \n\n<a href="mailto:lararuffle@lararuffle.co.uk?subject=strollCharlton">Email</a>
         \t<a href="http://lara.rufflecol.es">Website</a>
         \t\t<a href="https://github.com/lararufflecoles">GitHub</a>
-        \t\t<a href="http://uk.linkedin.com/in/lararufflecoles">LinkedIn</a></string>
-
-    <!--Detail Activity-->
-    <string name="website">Website</string>
+        \t\t<a href="http://uk.linkedin.com/in/lararufflecoles">LinkedIn</a>
+        \t<a href="https://twitter.com/lararufflecoles">Twitter</a>
+        \n\n- - -
+        \n\n<a href="http://lara.rufflecol.es/strollcharlton/photo_credits">Photo credits</a></string>
 
 </resources>

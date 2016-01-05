@@ -34,6 +34,7 @@ public class DetailData implements Parcelable {
     @SerializedName("longitude")
     private double longitude;
 
+
     public DetailData() /** Default constructor, needs to be re-declared as the Parcelabler one overrides it **/ {
     }
 
