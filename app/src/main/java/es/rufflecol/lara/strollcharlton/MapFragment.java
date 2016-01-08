@@ -1,7 +1,6 @@
 package es.rufflecol.lara.strollcharlton;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -10,7 +9,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -81,7 +79,7 @@ public class MapFragment extends SupportMapFragment implements
     private List<DetailData> readDataFromFileAndParse() {
         String text = readJsonFromFile();
         Gson gson = new Gson();
-        DetailDataModel parsedData = gson.fromJson(text, DetailDataModel.class);
+        StrollDataModel parsedData = gson.fromJson(text, StrollDataModel.class);
         List<DetailData> dataList = parsedData.getPlaces();
         return dataList;
     }
@@ -90,7 +88,7 @@ public class MapFragment extends SupportMapFragment implements
         String returnValue = "";
 
         try {
-            InputStream inputStream = getActivity().openFileInput("places.json");
+            InputStream inputStream = getActivity().openFileInput(Config.FILE_NAME);
 
             if (inputStream != null) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);

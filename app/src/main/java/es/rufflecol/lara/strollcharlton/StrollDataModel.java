@@ -4,7 +4,17 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class DetailDataModel {
+public class StrollDataModel {
+
+
+    @SerializedName("useful_links")
+    private String usefulLinks;
+
+    public String getUsefulLinks() {
+        return usefulLinks;
+    }
+
+
 
     @SerializedName("places")
     private List<DetailData> places;

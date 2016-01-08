@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 public class DetailActivity extends AppCompatActivity {
 
-    final static String PUT_EXTRA_DETAIL_DATA_ITEM = "Detail Data Item";
+    final static String  PUT_EXTRA_DETAIL_DATA_ITEM = "Detail Data Item";
 
     private DetailData data;
 
@@ -92,17 +92,17 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void openSettings() {
-        Intent openSettingsView = new Intent(this, SettingsActivity.class);
-        startActivity(openSettingsView);
+        Intent openSettings = new Intent(this, SettingsActivity.class);
+        startActivity(openSettings);
     }
 
     private void openUsefulLinks() {
-        Intent openUsefulLinksView = new Intent(DetailActivity.this, UsefulLinksActivity.class);
-        startActivity(openUsefulLinksView);
-    }
+            Intent openUsefulLinks = new Intent(this, UsefulLinksActivity.class);
+            startActivity(openUsefulLinks);
+        }
 
     private void openAbout() {
-        Intent openAboutView = new Intent(this, AboutActivity.class);
-        startActivity(openAboutView);
+        Intent openAbout = new Intent(this, AboutActivity.class);
+        startActivity(openAbout);
     }
 }

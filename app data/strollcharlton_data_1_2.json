@@ -1,0 +1,326 @@
+{
+	"useful_links": "If you would like to learn more about Charlton, please click the links below.<p>- - -<p><p><a href=\"http:\/\/charltonchampion.co.uk\">The Charlton Champion<\/a><br>Local news blog<p><a href=\"http:\/\/www.charltonparks.co.uk\">Charlton Parks Reminiscence Project<\/a><br>Superb site full of pictures, maps and interviews on anything and everything to do with the history of Charlton's parks<p><a href=\"http:\/\/www.greenwich.co.uk\">Greenwich.co.uk<\/a><br>Local news site covering Greenwich borough<p><a href=\"http:\/\/www.thegreenwichphantom.co.uk\">The Greenwich Phantom<\/a><br>Anonymous blog site covering Greenwich and its surrounding areas<p><a href=\"http:\/\/greenwichindustrialhistory.blogspot.co.uk\">Greenwich Industrial History<\/a><br>Historial site run by Dr Mary Mills<p><a href=\"http:\/\/www.royalgreenwich.gov.uk/greenchainsite/info/5/walking/2/green_chain_walk-sections/5\">Green Chain Walk: Thames Barrier to Oxleas Wood<\/a><br>This walk ties together the different areas discussed in this app. It also takes you past Severndroog Castle which is a fabulous place to visit - but definitely not in Charlton",
+
+	"places": [
+
+	{
+	"title": "Anchor & Hope",
+	"snippet": "Thameside pub hidden from view",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/anchor_hope.jpg",
+	"detail": "Hidden from view down the bottom of Anchor and Hope Lane, the Anchor & Hope pub has excellent river views towards the O2 and the Thames Barrier.
+				\n\nThe pub has a good location reputation with decent beers and  food available. There is also an outside seating area to make the most of the riverside location.
+				\n\nHead north from Charlton station, cross the main road and walk towards the river. There are large industrial units on the left and houses on your right, keep going past those.
+				\n\nWhen you reach the river, turn left and the pub is directly in front of you.",
+	"website": "http:\/\/whatpub.com\/pubs\/SEL\/10894\/anchor-hope-charlton",
+	"website_vanity": "whatpub.com/anchor-hope-charlton",
+	"latitude": "51.493591",
+	"longitude": "0.028780"
+	},
+
+	{
+	"title": "Barrier Park",
+	"snippet": "Small park near the Thames Barrier",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/barrier_park.png",
+	"detail": "Barrier Park is a very small piece of land running north-south from the north edge of Maryon Park to the car park serving the Thames Barrier Information Centre.
+				\n\nThe land was formerly the site of the Siemens Brothers Telegraph Works before it closed in 1968. With the land falling into disrepair over time, the plot was claimed by Greenwich Council and re-landscaped as a park in the late 1980s.
+				\n\nIf visiting the Thames Barrier or Maryon Park do take a five minute detour to see this little patch of green in among the industrial buildings of New Charlton (aka Charlton Riverside if you are in marketing).",
+	"website": "http:\/\/www.charltonparks.co.uk\/the-parks\/barrier-gardens",
+	"website_vanity": "charltonparks.co.uk/the-parks/barrier-gardens",
+	"latitude": "51.491779",
+	"longitude": "0.040072"
+	},
+
+	{
+	"title": "The Bugle Horn",
+	"snippet": "Charlton's oldest public house",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/bugle_horn.jpg",
+	"detail": "Built in the 17th century, The Bugle Horn is the oldest pub in the center of Charlton and is very popular with Charlton Athletic fans on match days. 
+				\n\nThe pub also serves food and regularly shows football matches.",
+	"website": "http:\/\/twitter.com\/buglepub",
+	"website_vanity": "twitter.com/buglepub",
+	"latitude": "51.481644",
+	"longitude": "0.036524"
+	},
+
+	{
+	"title": "Charlton Athletic Football Club",
+	"snippet": "Championship team who play at The Valley",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/cafc.jpg",
+	"detail": "Charlton Athletic Football Club (CAFC) was founded in 1905 by a group of teenagers living on East Street (now Eastmoor Street).
+				\n\nAfter a number of years in junior leagues, CAFC became professional in 1921 when they joined the Football League.
+				\n\nA few years earlier in 1919, the team played their first match at The Valley (formerly a chalk quarry) on Floyd Road, just east of Charlton station.
+				\n\nThe club's traditional kit consists of red shirts, white shorts and red socks, and their club nickname is The Addicks.
+				\n\n\CAFC still play at The Valley today and a sold out match can command an audience of 27,111.
+				\n\nThe club are currently playing in The Championship, and their rivals are Millwall and Crystal Palace, just a few miles west and south of Charlton.",
+	"website": "http:\/\/cafc.co.uk",
+	"website_vanity": "cafc.co.uk",
+	"latitude": "51.486526",
+	"longitude": "0.036524"
+	},
+
+	{
+	"title": "Charlton Cemetery",
+	"snippet": "Local cemetery opened in 1855",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_cemetery.png",
+	"detail": "Adjacent to the east end of Charlton Park, and built on land formerly owned by the Maryon-Wilson family, the cemetery is fifteen acres in size.
+				\n\nThe site features two 19th century chapels, one Church of England, one Roman Catholic.
+				\n\nOne burial of note is Sir Geoffrey Callender, the first director of the National Maritime Museum in Greenwich.
+				\n\nVisitors are welcome from 9am daily, and public toilets are also available.",
+	"website": "https:\/\/en.wikipedia.org\/wiki\/Charlton_Cemetery",
+	"website_vanity": "wikipedia.org/charlton_cemetery",
+	"latitude": "51.481258",
+	"longitude": "0.049117"
+	},
+
+	{
+	"title": "Charlton House",
+	"snippet": "Jacobean building built in 1612",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_house.jpg",
+	"detail": "Possibly one of London’s best kept architectural secrets, Charlton House was built in 1612 during the reign of James I. His son Prince Henry was tutored by Sir Adam Newton and the house was built for him.
+				\n\nThe house is presumed to have been designed by John Thorpe as he served as the Clerk of Works at Greenwich Palace (also known as the Palace of Palcentia, knocked down in 1660 unfortunately).
+				\n\nOriginally designed in an ‘E’ shape, Charlton House now has a wing extension that was built in 1877 by Norman Shaw.
+				\n\nThe gardens surrounding the house are open at all times to enjoy, and they lead directly onto Charlton Park itself. Do note that the Amnesty International Peace Garden is only open when the house itself is open.
+				\n\nThere is also an Orangery to the north of the house, this was converted into a public toilet but is now closed and in a poor state of repair.
+				\n\nPurchased from the Maryon-Wilson family by the Metropolitan Borough of Greenwich in 1925, the building and grounds are currently run by Greenwich Council. The building now houses a book and toy library, The Mulberry Tea Rooms (not open on weekends), and is often open for tours during Open House weekend every September.
+				\n\n\Charlton House is also licenced for weddings, and the gardens host the annual - and historically bawdy - Horn Fayre (well worth a detailed Google on).",
+	"website": "http:\/\/charlton-house.org",
+	"website_vanity": "charlton-house.org",
+	"latitude": "51.480752",
+	"longitude": "0.037084"
+	},
+
+	{
+	"title": "Charlton Lane Level Crossing",
+	"snippet": "London's most central level crossing",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_lane_level_crossing.jpg",
+	"detail": "Just east of Charlton station where Maryon Park meets Charlton Lane, inner London’s last remaining level crossing plies its trade at least twenty times an hour during peak periods.
+				\n\nAutomatic barriers came into use in May 1973 and these are controlled from the wooden signal cabin that sits on the London bound side of the track.
+				\n\nA footbridge allows access to both sides of the track when the barriers are down.",
+	"website": "http:\/\/kentrail.org.uk\/charlton_lane_crossing.htm",
+	"website_vanity": "kentrail.org.uk/charlton_lane_crossing",
+	"latitude": "51.489397",
+	"longitude": "0.039732"
+	},
+
+	{
+	"title": "Charlton Lido",
+	"snippet": "50m open air heated swimming pool",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_lido.jpg",
+	"detail": "Opened in 1939, Charlton Lido was built during a period when outdoor swimming was very popular with the general public. During the 1930s 169 pools were built across the UK.
+				\n\nCharlton’s heated pool is 50m in length and was re-opened in 2012 after a £3 million refurbishment. The lido now boasts a padding pool, gym and an upstairs cafe with views over the pool.
+				\n\nWhen the lido first re-opened winter operating hours were limited, but after a vocal campaign by locals, the pool is now open for a decent number of hours every day all year round.
+				\n\nCheck the link below for up to date opening times as times do change month to month. Do also note that slightly cheaper entry prices can be found online if you purchase in advance.",
+	"website": "http:\/\/www.better.org.uk\/leisure\/charlton-lido",
+	"website_vanity": "better.org.uk/leisure/charlton-lido",
+	"latitude": "51.475273",
+	"longitude": "0.038943"
+	},
+
+	{
+	"title": "Charlton Park",
+	"snippet": "Park adjacent to Charlton House",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_park.jpg",
+	"detail": "From 1767 to 1923, the Maryon-Wilson family owned Charlton House and a good deal of land in Charlton and Woolwich.
+				\n\nIn 1925 the house and 108 acres of land was sold to the Metropolitan Borough of Greenwich, and out of this purchase Charlton Park was formed from 43 acres of land adjacent to the house itself.
+				\n\nThe park is not huge but it does have a cricket pitch, outdoor gym, and a children’s playground, as well as the small but well formed Old Cottage Cafe. There is also plenty of space for dogs to have a good run about.
+				\n\nStand at the back of Charlton House for a view of the full length of the park. If you were a Maryon-Wilson back in the 19th century, your land stretched all the way from the house to Woolwich Common.",
+	"website": "http:\/\/www.royalgreenwich.gov.uk\/directory_record\/3763\/charlton_park",
+	"website_vanity": "royalgreenwich.gov.uk/charlton_park",
+	"latitude": "51.480386",
+	"longitude": "0.043151"
+	},
+
+	{
+	"title": "Charlton Station",
+	"snippet": "Mainline train station run by Southeastern",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/charlton_station.jpg",
+	"detail": "Zone 3 train station for the Charlton area, connects to Woolwich, Dartford, Slade Green and Gillingham in the east, and Blackheath, Lewisham, Greenwich and central London to the west.
+				\n\nBuses from the station connect you with North Greenwich tube station, approximately fifteen minutes away depending on traffic.
+				\n\nHead south and up hilly Charlton Church Lane to find the Village, or north to find the Thames.",
+	"website": "https:\/\/www.southeasternrailway.co.uk\/your-journey\/station-information\/CTN",
+	"website_vanity": "southeasternrailway.co.uk/station-information/CTN",
+	"latitude": "51.486830",
+	"longitude": "0.031277"
+	},
+
+	{
+	"title": "Gilbert's Pit and Cox's Mount",
+	"snippet": "Former sand pit and Site of Special Scientific Interest",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/gilberts_pit.jpg",
+	"detail": "Part of Maryon Park, Gilbert's Pit is a 13 acre sand pit that was worked from the late 18th century to 1989. It is named after a Mr E. Gilbert who managed the site, but the land was owned by the Maryon-Wilson family. The land was then given to London County Council in 1890.
+				\n\nIn 1985 the land was designated as a Site of Special Scientific Interest due to its unique geological nature. Most of the pit is now fenced off to try and limit erosion.
+				\n\nAs access to the site is limited, there is only one small area walkers can visit, however, there are two access paths which allows for a circular route.
+				\n\nThis area is known as Cox's Mount and it is the summit of Gilbert’s Pit. Named for a Mr Cox of 5 Charlton Terrace who held the land on a short lease, the summit has excellent views towards Canary Wharf.
+				\n\nThe mount also serves as the roof of the train tunnel running under the edge of Maryon Park between Charlton and Woolwich Dockyard stations.",
+	"website": "https:\/\/en.wikipedia.org\/wiki\/Gilbert%27s_Pit",
+	"website_vanity": "wikipedia.org/gilberts_pit",
+	"latitude": "51.489837",
+	"longitude": "0.040995"
+	},
+
+	{
+	"title": "Hornfair Park",
+	"snippet": "Multi-use park next to Charlton Lido",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/hornfair_park.jpg",
+	"detail": "Named for the local Horn Fayre of old, Hornfair Park is a small park just north of Charlton Park, and it features a BMX track, basketball and tennis courts and a football pitch. A paddling pool can also be accessed in the summer.
+				\n\nCharlton Lido is also part of the park, and the tennis courts and lido are both run by leisure company Better.
+				\n\nTo access the park from Charlton Park head towards Inigo Jones Road, or walk all the way down Charlton Park Lane for slightly quicker access to the lido.",
+	"website": "http:\/\/www.royalgreenwich.gov.uk\/directory_record/3774/hornfair_park",
+	"website_vanity": "royalgreenwich.gov.uk/hornfair_park",
+	"latitude": "51.476417",
+	"longitude": "0.045984"
+	},
+
+	{
+	"title": "Maryon Park",
+	"snippet": "Park with great views towards Canary Wharf",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/maryon_park.jpg",
+	"detail": "Nestled between the main road to Greenwich and Woolwich and Maryon Wilson Park, Maryon Park includes a children’s playground, and basketball and tennis courts.
+				\n\nThe park includes the hilly areas known as Gilbert’s Pit and Cox’s Mount, and the entire site was quarried for sand before the Maryon-Wilson family gave the land to London County Council in 1890.
+				\n\nLocal community groups ‘Friends of Maryon and Maryon Wilson Parks’ and ‘Maryon Park Community Garden’, help run the park with monthly litter clearing events, and with the development of allotments in a corner of the park formerly covered by greenhouses.
+				\n\nMaryon Park also has a claim to fame courtesy of 1966 film ‘Blow Up’. The film centers on a photographer’s image of a murder in a park, and this park is none other than Maryon Park. YouTube has a 2012 documentary on the filming locations of ‘Blow Up’ if you would like to see more.",
+	"website": "http:\/\/www.friendsofmaryonparks.org",
+	"website_vanity": "friendsofmaryonparks.org",
+	"latitude": "51.489096",
+	"longitude": "0.043399"
+	},
+
+	{
+	"title": "Maryon Wilson Animal Park",
+	"snippet": "Park with a number of fallow deer to visit",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/mwap.jpg",
+	"detail": "Maryon Wilson Animal Park covers about half of Maryon Wilson Park, and is directly across the road from Maryon Park. It can also be accessed from The Village by turning left down Charlton Lane.
+				\n\nThe north part of the park is hilly and covered in trees, whereas the southern area opens out into a valley where the animal enclosures are.
+				\n\nLike Maryon Park, this area was formerly known as Hanging Wood, and is named for the supposed hanging of highwaymen who robbed travellers crossing Blackheath and Shooters Hill.
+				\n\nIn 1924 the Maryon-Wilson family donated 32 acres of their Hanging Wood land to the council and this area became Maryon Wilson Park. Spencer Maryon-Wilson then contributed a herd of deer, and ninety years later the deer still flourish and have many other types of friends to bleet at.
+				\n\nFormerly funded by Greenwich Council, the animal enclosures are now run by a charity and rely on donations to stay open. You can support the animals by adoption or sponsorship, and you can assist in the running of the park through volunteering.
+				\n\nThe park is open at all times but regular tours of the animal enclosures are available most weeks. Check the link below for full details of when you can meet and feed the fifteen types of animals living in the park.",
+	"website": "http:\/\/www.maryonwilsonanimalpark.org.uk",
+	"website_vanity": "maryonwilsonanimalpark.org.uk",
+	"latitude": "51.484454",
+	"longitude": "0.043593"
+	},
+
+	{
+	"title": "The Old Cottage Cafe",
+	"snippet": "Cafe serving cakes, meals and hot drinks",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/old_cottage_cafe.jpg",
+	"detail": "Hiding behind the trees in Charlton Park is The Old Cottage Cafe. Serving hot and cold drinks, snacks, cakes and filling meals, the cafe is a local delight.
+				\n\nThe inside itself isn’t very large but it is very cosy and homely. Toys are also available for children to play with, and the cafe sells a selection of craft goods plus honey from Oxleas Woods.
+				\n\nSeats and tables are also available outside if you would like your tea served with a view.
+				\n\nEnter Charlton Park at the junction of Charlton Lane and The Village, and you will find the cafe on your right.",
+	"website": "http:\/\/twitter.com\/oldcoffeeshop",
+	"website_vanity": "twitter.com/oldcoffeeshop",
+	"latitude": "51.481661",
+	"longitude": "0.040458"
+	},
+
+	{
+	"title": "The Royal Oak",
+	"snippet": "CAFC fans favourite built in 1630",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/royal_oak.jpg",
+	"detail": "The Royal Oak on Charlton Lane is another local pub popular with the supporters of Charlton Athletic Football Club.",
+	"website": "http:\/\/www.royaloak-charlton.co.uk",
+	"website_vanity": "royaloak-charlton.co.uk",
+	"latitude": "51.488282",
+	"longitude": "0.039461"
+	},
+
+	{
+	"title": "Seewoo",
+	"snippet": "Large Chinese supermarket",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/seewoo.jpg",
+	"detail": "Whilst it is only a supermarket, Seewoo is a wonder to walk around - especially when you discover the huge tanks of fresh fish and crustaceans.
+				\n\nPurchase an infinite variety of noodles, fresh Chinese vegetables and delve into the freezer section for pre-prepared wonton soups, dumplings and spring rolls.
+				\n\nPure Chinese foodie heaven.
+				\n\nAccess Seewoo via Horn Lane, and do note that the supermarket is a twenty minute walk north-west from Charlton station.",
+	"website": "http:\/\/seewoo.com\/contact-greenwich",
+	"website_vanity": "seewoo.com/greenwich",
+	"latitude": "51.489495",
+	"longitude": "0.018797"
+	},
+
+	{
+	"title": "St Luke's Almshouses",
+	"snippet": "Built by Sir Richard Baynes",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/st_lukes_almshouses.jpg",
+	"detail": "Almshouses are dotted around the UK and St Luke's Church in Charlton has its own almshouse just off The Village on Fairfield Grove.
+				\n\nVery little information is publicly available about the history of this almshouse, but there is a date stone on the front of the building dated 1706-1839, and the link below attributes the building to Sir Richard Baynes.
+				\n\nTo apply to live here you must be 60 or older and be a local resident.
+				\n\nCharlton used to have another almshouse but it was unfortunately knocked down. The very grand looking Dutch Church Almshouse was located behind St Luke’s Church on Charlton Church Lane.
+				\n\nBuilt by William Wigginton in 1868 on the orders of the Dutch Church at Austin Friars in central London, a few photos of the building can be found online.",
+	"website": "http:\/\/www.southlondonguide.co.uk\/charlton\/history.htm",
+	"website_vanity": "southlondonguide.co.uk/charlton/history",
+	"latitude": "51.482857",
+	"longitude": "0.038648"
+	},
+
+	{
+	"title": "St Luke's Church",
+	"snippet": "Oldest church in Charlton",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/st_lukes_church.jpg",
+	"detail": "The Diocese of Southwark notes that there was a church on this site in 1077, but in 1630 a new building was erected using funds from the estate of Sir Adam Newton, then the owner of Charlton House.
+				\n\nOne burial of note in the church is Britain's only assassinated Prime Minister Spencer Perceval (1762-1812). Perceval resides in the church crypt, and a plaque and bust can be found in the church itself.
+				\n\nAnglican church services are held on Sundays at 10am, and visitors are welcome on Tuesdays and Thursdays from 10am to 2pm.",
+	"website": "http:\/\/www.southwark.anglican.org\/parishes\/065cf1",
+	"website_vanity": "southwark.anglican.org/parishes/065cf1",
+	"latitude": "51.481819",
+	"longitude": "0.035738"
+	},
+
+	{
+	"title": "Thames Barrier",
+	"snippet": "Movable floor barrier protecting the floodplains of London",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/thames_barrier.jpg",
+	"detail": "Operational since 1982, the 520m span of the Thames Barrier crosses the river between Silvertown and Charlton.
+				\n\nWhen closed, the ten steel gates of the barrier protect 125 sq km of central London from tidal surges, as well as protecting areas near Teddington Weir in west London when the river flow is particularly high.
+				\n\nThe barrier has been closed 175 times as of April 2015.
+				\n\nYou can view the barrier by walking along the Thames Path, or by accessing Eastmoor Street just off the main road to Greenwich and Woolwich.",
+	"website": "http:\/\/www.gov.uk\/guidance\/the-thames-barrier",
+	"website_vanity": "gov.uk/the-thames-barrier",
+	"latitude": "51.494947",
+	"longitude": "0.037379"
+	},
+
+	{
+	"title": "Thames Barrier Information Centre",
+	"snippet": "Information centre, cafe and play area",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/thames_barrier_information_centre.jpg",
+	"detail": "Just east of the Thames Barrier itself is an information centre where you can learn more about the history of flooding in London and why the barrier was needed.
+				\n\nNext to the information centre is The View cafe which serves hot and cold drinks, sandwiches, snacks and hot food.
+				\n\nThere is also a play area for children next to the cafe. This area constructed around the flood defence levee that the cafe sits atop of. Children and adults alike might enjoy a trip down the levee slide.",
+	"website": "http:\/\/www.royalgreenwich.gov.uk\/directory_record\/2006\/thames_barrier_and_information_centre",
+	"website_vanity": "royalgreenwich.gov.uk/thames_barrier_and_information_centre",
+	"latitude": "51.495243",
+	"longitude": "0.040727"
+	},
+
+	{
+	"title": "The White Swan",
+	"snippet": "Cosy pub on the main road through Charlton",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/white_swan.jpg",
+	"detail": "Built in 1889, The White Swan became the second pub to be built on The Village, just a few doors down from the Bugle Horn.
+				\n\nIn recent years the pub’s popularity sank somewhat, but after a new management team took over in September 2015, The White Swan is gaining a super reputation as a great place to go for a relaxing drink.
+				\n\nFor locals familiar with the excellent Pelton Arms in Greenwich, visitors can expect a similar atmosphere as the Pelton’s management team now runs the pub.
+				\n\nThe pub has a varied monthly schedule of live music, bingo, quiz nights, various club meetups and a cheeseboard evening every Sunday.",
+	"website": "http:\/\/twitter.com\/SwanPubSE7",
+	"website_vanity": "twitter.com/swanpubSE7",
+	"latitude": "51.481830",
+	"longitude": "0.037523"
+	},
+
+	{
+	"title": "Woolwich Common",
+	"snippet": "Grassy area just outside Charlton",
+	"image": "http://lara.rufflecol.es/strollcharlton/photos/woolwich_common.jpg",
+	"detail": "Whilst technically in Woolwich, Woolwich Common is adjacent to Charlton Cemetery, and an very easy walk from Charlton itself.
+				\n\nThe common has been used by the military due to its proximity to the Royal Artillery’s (RA) base in Woolwich. The RA moved away from Woolwich in 2003 but the base is still in use by other sections of the army, and soldiers are occasionally seen training on the land.
+				\n\nIf you choose to walk through the common from the cemetery end, you can reach Charlton Lido using Shooters Hill Road. Alternatively you can access Hornfair Park using the entrance on Stane Way, this road is accessed off Baker Road.",
+	"website": "https:\/\/en.wikipedia.org\/wiki\/Woolwich_Common",
+	"website_vanity": "wikipedia.org/woolwich_common",
+	"latitude": "51.473931",
+	"longitude": "0.051949"
+	}
+
+	]
+}

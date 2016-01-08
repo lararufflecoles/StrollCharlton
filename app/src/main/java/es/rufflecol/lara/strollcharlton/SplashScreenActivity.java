@@ -53,7 +53,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(String... urls) {
             try {
-                URL url = new URL("http://lara.rufflecol.es/strollcharlton/places.json");
+                URL url = new URL(Config.DATA_URL);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 text = readStream(urlConnection.getInputStream());
             } catch (Exception e) {
@@ -62,7 +62,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             writeStreamToFile(text);
 
             File directory = getFilesDir();
-            File file = new File(directory, "places.json");
+            File file = new File(directory, Config.FILE_NAME);
             if (file.exists()) {
                 return true;
             } else {
@@ -102,7 +102,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private void writeStreamToFile(String data) {
         try {
-            FileOutputStream fileOutputStream = openFileOutput("places.json", Context.MODE_PRIVATE);
+            FileOutputStream fileOutputStream = openFileOutput(Config.FILE_NAME, Context.MODE_PRIVATE);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
             outputStreamWriter.write(data);
             outputStreamWriter.close();

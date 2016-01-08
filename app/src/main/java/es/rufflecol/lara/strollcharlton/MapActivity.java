@@ -82,17 +82,17 @@ public class MapActivity extends AppCompatActivity {
     }
 
     private void openSettings() {
-        Intent openSettingsView = new Intent(MapActivity.this, SettingsActivity.class);
-        startActivity(openSettingsView);
+        Intent openSettings = new Intent(MapActivity.this, SettingsActivity.class);
+        startActivity(openSettings);
     }
 
     private void openUsefulLinks() {
-        Intent openUsefulLinksView = new Intent(MapActivity.this, UsefulLinksActivity.class);
-        startActivity(openUsefulLinksView);
+        Intent openUsefulLinks = new Intent(this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinks);
     }
 
     private void openAbout() {
-        Intent openAboutView = new Intent(MapActivity.this, AboutActivity.class);
-        startActivity(openAboutView);
+        Intent openAbout = new Intent(MapActivity.this, AboutActivity.class);
+        startActivity(openAbout);
     }
 }

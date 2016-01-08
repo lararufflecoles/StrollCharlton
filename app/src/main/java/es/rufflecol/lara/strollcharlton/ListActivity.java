@@ -58,7 +58,7 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
     private List<DetailData> readDataFromFileAndParse() {
         String text = readJsonFromFile();
         Gson gson = new Gson();
-        DetailDataModel parsedData = gson.fromJson(text, DetailDataModel.class);
+        StrollDataModel parsedData = gson.fromJson(text, StrollDataModel.class);
         List<DetailData> dataList = parsedData.getPlaces();
         return dataList;
     }
@@ -67,7 +67,7 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
         String returnValue = "";
 
         try {
-            InputStream inputStream = openFileInput("places.json");
+            InputStream inputStream = openFileInput(Config.FILE_NAME);
 
             if (inputStream != null) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -121,17 +121,17 @@ public class ListActivity extends AppCompatActivity implements RecyclerAdapter.O
     }
 
     private void openSettings() {
-        Intent openSettingsView = new Intent(this, SettingsActivity.class);
-        startActivity(openSettingsView);
+        Intent openSettings = new Intent(this, SettingsActivity.class);
+        startActivity(openSettings);
     }
 
     private void openUsefulLinks() {
-        Intent openUsefulLinksView = new Intent(ListActivity.this, UsefulLinksActivity.class);
-        startActivity(openUsefulLinksView);
+        Intent openUsefulLinks = new Intent(this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinks);
     }
 
     private void openAbout() {
-        Intent openAboutView = new Intent(this, AboutActivity.class);
-        startActivity(openAboutView);
+        Intent openAbout = new Intent(this, AboutActivity.class);
+        startActivity(openAbout);
     }
 }
