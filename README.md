@@ -9,6 +9,4 @@ Use strollCharlton as your guide when you visit Charlton in south-east London. S
 
 App designed, written and coded by Lara Ruffle Coles.
 
----
-
 https://youtu.be/RngGKg7XNrs
