@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 public class DetailActivity extends AppCompatActivity {
 
-    final static String  PUT_EXTRA_DETAIL_DATA_ITEM = "Detail Data Item";
+    final static String PUT_EXTRA_DETAIL_DATA_ITEM = "Detail Data Item";
 
     private DetailData data;
 
@@ -37,6 +37,7 @@ public class DetailActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.detail_image);
         Picasso.with(this)
                 .load(data.getImage())
+                .placeholder(R.drawable.activity_detail_image_placeholder)
                 .into(imageView);
 
         TextView detailTextView = (TextView) findViewById(R.id.detail_text);
@@ -97,9 +98,9 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void openUsefulLinks() {
-            Intent openUsefulLinks = new Intent(this, UsefulLinksActivity.class);
-            startActivity(openUsefulLinks);
-        }
+        Intent openUsefulLinks = new Intent(this, UsefulLinksActivity.class);
+        startActivity(openUsefulLinks);
+    }
 
     private void openAbout() {
         Intent openAbout = new Intent(this, AboutActivity.class);

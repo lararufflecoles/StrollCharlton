@@ -59,7 +59,12 @@ public class SplashScreenActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            writeStreamToFile(text);
+
+            if (text != null) {
+                writeStreamToFile(text);
+            } else {
+                return false;
+            }
 
             File directory = getFilesDir();
             File file = new File(directory, Config.FILE_NAME);
@@ -76,7 +81,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 jsonDownloaded = true;
                 startListActivityIfJsonDownloadedAndTimerCompleted();
             } else {
-                Toast.makeText(SplashScreenActivity.this, "Error reading file", Toast.LENGTH_LONG).show();
+                Toast.makeText(SplashScreenActivity.this, "Error reading data", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -89,7 +94,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         }
     }
 
-    private String readStream(InputStream inputStream) throws IOException {
+    private String readStream(InputStream inputStream) throws Exception {
 
         BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder total = new StringBuilder();
